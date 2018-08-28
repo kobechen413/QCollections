@@ -9,7 +9,9 @@ public class UTQQueue : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        QQueue<int> queue = new QQueue<int>(5);
+     //   IQueue<int> queue = new QQueue<int>(5);
+        
+		IQueue<int> queue = new QSQueue<int>();
 
         queue.Add(1);
         queue.Add(2);

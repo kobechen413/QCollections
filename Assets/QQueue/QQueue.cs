@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace QCollections
 {
-    public class QQueue<T>
+    public class QQueue<T> : IQueue<T>
     {
         // 元素集合
         T[] m_Array = null;
@@ -77,12 +77,12 @@ namespace QCollections
         {
             get { return m_Count; }
         }
-        
-        public override string ToString() 
+
+        public override string ToString()
         {
             string ret = "";
             for (int i = 0; i < m_Count; i++)
-			{
+            {
                 ret += m_Array[i] + " ";
             }
 
